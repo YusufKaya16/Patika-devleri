@@ -1,0 +1,42 @@
+.card {
+    padding-block: 20px;
+    border-radius: 1rem;
+    transition: box-shadow 150ms ease-in-out, transform 150ms ease-in-out, opacity 150ms ease-in-out;
+    cursor: pointer;
+    animation: showing 2s 1 ease;
+}
+
+.card:hover {
+    box-shadow: 3px 5px 10px black;
+    border: 2px solid black;
+    transform: scale(1.08);
+}
+
+.row:hover .card:not(:hover) {
+    transform: scale(.9);
+    opacity: .5;
+}
+
+.title {
+    animation: slider 1s 1 ease;
+}
+
+@keyframes showing {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slider {
+    0% {
+        transform: translateY(-300px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

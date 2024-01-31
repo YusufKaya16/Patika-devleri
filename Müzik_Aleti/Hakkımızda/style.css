@@ -1,0 +1,33 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    grid-template-columns: 60%;
+}
+
+.card {
+    border-radius: 1.5rem;
+}
+
+.information {
+    animation: slider 500ms 1 ease-in-out;
+}
+
+.vizyon-container {
+    animation: slider 700ms 1 ease-in-out;
+}
+
+.misyon-container {
+    animation: slider 900ms 1 ease-in-out;
+}
+
+@keyframes slider {
+    from {
+        transform: translate(-1200px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
