@@ -1,0 +1,5 @@
+/***  Offset   ***/
+
+Offset, column etrafında boşluk bırakma ve bir satır içerisinde hizalamaya yardımcı olur.
+Offset columnlar ile kullanılır. 12lik grid sistem göre öğe col-sm-8 yer kaplıyorsa, Offset için toplam 4 birimlik yer kalır.
+Tam ortalamak için offset-sm-2 diyerek soldan 2 ve sağdan 2 birim olacak şekilde ortalanır.
